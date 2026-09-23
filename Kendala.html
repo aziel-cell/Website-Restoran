@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kendala - Cita Rasa Indonesia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="menu-card issue-card">
+    <h1>Kendala</h1>
+
+    <nav aria-label="Navigasi utama">
+      <a href="index.html">Home</a>
+      <a href="profil.html">Profil</a>
+      <a href="About.html">About</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Kendala.html">Kendala</a>
+    </nav>
+
+    <section class="issue-intro" aria-labelledby="issue-title">
+      <h2 id="issue-title">Ada kendala?</h2>
+      <p>Sampaikan masalah Anda kepada kami. Kami akan membantu secepat mungkin.</p>
+    </section>
+
+    <section class="issue-options" aria-label="Kendala yang sering terjadi">
+      <article>
+        <h3>Pesanan terlambat</h3>
+        <p>Hubungi kami di <a href="tel:+62211234567">(021) 123-4567</a> dengan menyebutkan detail pesanan.</p>
+      </article>
+      <article>
+        <h3>Menu atau harga tidak sesuai</h3>
+        <p>Catat nama menu yang bermasalah dan kirimkan informasinya melalui formulir di bawah.</p>
+      </article>
+      <article>
+        <h3>Kualitas makanan</h3>
+        <p>Kami menerima masukan agar kualitas rasa dan pelayanan terus menjadi lebih baik.</p>
+      </article>
+    </section>
+
+    <section class="issue-faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">FAQ Bantuan</h2>
+      <details>
+        <summary>Bagaimana cara mengecek pesanan?</summary>
+        <p>Hubungi kami melalui telepon dan siapkan nama serta detail pesanan Anda.</p>
+      </details>
+      <details>
+        <summary>Apakah pesanan bisa diubah?</summary>
+        <p>Pesanan dapat diubah selama belum diproses. Segera hubungi kami untuk mendapatkan bantuan.</p>
+      </details>
+      <details>
+        <summary>Bagaimana cara pembayaran?</summary>
+        <p>Pembayaran dapat dilakukan sesuai arahan petugas saat pesanan dikonfirmasi.</p>
+      </details>
+      <details>
+        <summary>Ke mana saya menghubungi bantuan?</summary>
+        <p>Hubungi (021) 123-4567 atau kirimkan laporan melalui formulir di bawah.</p>
+      </details>
+    </section>
+
+    <form class="issue-form" id="issueForm">
+      <h2>Laporkan Kendala</h2>
+      <label for="issueType">Jenis kendala</label>
+      <select id="issueType" name="issueType" required>
+        <option value="">Pilih kendala</option>
+        <option>Pesanan terlambat</option>
+        <option>Menu atau harga tidak sesuai</option>
+        <option>Kualitas makanan</option>
+        <option>Lainnya</option>
+      </select>
+
+      <label for="issueMessage">Ceritakan kendala Anda</label>
+      <textarea id="issueMessage" name="issueMessage" rows="4" placeholder="Tuliskan detail kendala..."
+        required></textarea>
+
+      <label for="issueContact">Nomor telepon atau email</label>
+      <input id="issueContact" name="issueContact" type="text" placeholder="Contoh: 0812xxxx atau nama@email.com"
+        required>
+
+      <button class="home-button issue-submit" type="submit">Kirim Laporan</button>
+      <p class="issue-status" id="issueStatus" role="status" aria-live="polite"></p>
+    </form>
+
+    <div class="copyright">&copy; 2026 Sederhana Rasa</div>
+  </main>
+
+  <script>
+    const issueForm = document.getElementById("issueForm");
+    const issueStatus = document.getElementById("issueStatus");
+
+    issueForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      issueStatus.textContent = "Laporan Anda sudah diterima. Terima kasih atas masukannya.";
+      issueForm.reset();
+    });
+  </script>
+
+</body>
+
+</html>
