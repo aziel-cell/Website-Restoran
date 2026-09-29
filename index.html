@@ -4,241 +4,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cita Rasa Indonesia | Restoran Nusantara</title>
+  <title>Menu Cita Rasa Indonesia</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="landing-page">
-  <header class="landing-header">
-    <a class="brand" href="home.html" aria-label="Cita Rasa Indonesia, halaman utama">
-      <span class="brand-mark" aria-hidden="true">CR</span>
-      <span>Cita Rasa Indonesia</span>
-    </a>
-    <nav class="landing-nav" aria-label="Navigasi utama">
+<body>
+  <div class="menu-card">
+    <h1 id="home">Cita Rasa Indonesia</h1>
+
+    <nav aria-label="Navigasi utama">
       <a href="home.html">Home</a>
-      <a href="#menu">Menu</a>
       <a href="profil.html">Profil</a>
       <a href="About.html">About</a>
-      <a href="Gallery.html">Galeri</a>
+      <a href="Gallery.html">Gallery</a>
       <a href="Kendala.html">Kendala</a>
     </nav>
-  </header>
 
-  <main>
-    <section class="landing-hero" aria-labelledby="hero-title">
-      <img class="hero-image"
-        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=90"
-        alt="Suasana hangat di restoran Cita Rasa Indonesia" fetchpriority="high" />
-      <div class="hero-content">
-        <p class="hero-kicker">Masakan Nusantara, dibuat dengan hati</p>
-        <h1 id="hero-title">Cita Rasa Indonesia</h1>
-        <p class="hero-description">
-          Sajian autentik, bahan pilihan, dan kehangatan rumah di setiap hidangan.
+    <div class="page-wrap">
+      <div class="main-content">
+        <p class="deskripsi">
+          Menyajikan cita rasa Indonesia dengan kualitas internasional.
         </p>
-        <a class="order-button" href="tel:+62211234567">Pesan Sekarang</a>
-      </div>
-    </section>
 
-    <section class="landing-section menu-section" id="menu" aria-labelledby="menu-title">
-      <div class="section-heading">
-        <p class="section-kicker">Dari dapur kami</p>
-        <h2 id="menu-title">Menu pilihan</h2>
-        <p>Temukan hidangan dan minuman favorit untuk menemani harimu.</p>
-      </div>
+        <div id="profil">
+          <h2>Menu Makanan</h2>
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th scope="col">Nama Makanan</th>
+                <th scope="col">Kategori</th>
+                <th scope="col">Harga</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ayam Bakar</td>
+                <td>Ayam</td>
+                <td>$5.00</td>
+              </tr>
+              <tr>
+                <td>Ayam Goreng</td>
+                <td>Ayam</td>
+                <td>$5.00</td>
+              </tr>
+              <tr>
+                <td>Ayam Geprek</td>
+                <td>Ayam</td>
+                <td>$5.50</td>
+              </tr>
+              <tr>
+                <td>Bebek Goreng</td>
+                <td>Bebek</td>
+                <td>$6.50</td>
+              </tr>
+              <tr>
+                <td>Bebek Bakar</td>
+                <td>Bebek</td>
+                <td>$7.00</td>
+              </tr>
+              <tr>
+                <td>Rendang</td>
+                <td>Daging</td>
+                <td>$6.50</td>
+              </tr>
+              <tr>
+                <td>Nasi Goreng</td>
+                <td>Nasi</td>
+                <td>$5.00</td>
+              </tr>
+              <tr>
+                <td>Sate Ayam</td>
+                <td>Ayam</td>
+                <td>$6.00</td>
+              </tr>
+              <tr>
+                <td>Soto Ayam</td>
+                <td>Ayam</td>
+                <td>$5.50</td>
+              </tr>
+              <tr>
+                <td>Gado-gado</td>
+                <td>Sayuran</td>
+                <td>$4.50</td>
+              </tr>
+              <tr>
+                <td>Ikan Bakar</td>
+                <td>Ikan</td>
+                <td>$7.00</td>
+              </tr>
+            </tbody>
+          </table>
 
-      <div class="menu-grid">
-        <section class="menu-group" aria-labelledby="food-menu-title">
-          <h3 id="food-menu-title">Makanan</h3>
-          <div class="table-scroll">
-            <table class="menu-table">
-              <caption>Daftar menu makanan dan harga</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Nama Makanan</th>
-                  <th scope="col">Kategori</th>
-                  <th scope="col">Harga</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Ayam Bakar</td>
-                  <td>Ayam</td>
-                  <td>$5.00</td>
-                </tr>
-                <tr>
-                  <td>Ayam Goreng</td>
-                  <td>Ayam</td>
-                  <td>$5.00</td>
-                </tr>
-                <tr>
-                  <td>Ayam Geprek</td>
-                  <td>Ayam</td>
-                  <td>$5.50</td>
-                </tr>
-                <tr>
-                  <td>Bebek Goreng</td>
-                  <td>Bebek</td>
-                  <td>$6.50</td>
-                </tr>
-                <tr>
-                  <td>Bebek Bakar</td>
-                  <td>Bebek</td>
-                  <td>$7.00</td>
-                </tr>
-                <tr>
-                  <td>Rendang</td>
-                  <td>Daging</td>
-                  <td>$6.50</td>
-                </tr>
-                <tr>
-                  <td>Nasi Goreng</td>
-                  <td>Nasi</td>
-                  <td>$5.00</td>
-                </tr>
-                <tr>
-                  <td>Sate Ayam</td>
-                  <td>Ayam</td>
-                  <td>$6.00</td>
-                </tr>
-                <tr>
-                  <td>Soto Ayam</td>
-                  <td>Ayam</td>
-                  <td>$5.50</td>
-                </tr>
-                <tr>
-                  <td>Gado-gado</td>
-                  <td>Sayuran</td>
-                  <td>$4.50</td>
-                </tr>
-                <tr>
-                  <td>Ikan Bakar</td>
-                  <td>Ikan</td>
-                  <td>$7.00</td>
-                </tr>
-              </tbody>
-            </table>
+          <h2>Menu Minuman</h2>
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th scope="col">Nama Minuman</th>
+                <th scope="col">Harga</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Es Teh Manis</td>
+                <td>$2.00</td>
+              </tr>
+              <tr>
+                <td>Jus Alpukat</td>
+                <td>$4.50</td>
+              </tr>
+              <tr>
+                <td>Machalate</td>
+                <td>$5.50</td>
+              </tr>
+              <tr>
+                <td>Kopi Susu</td>
+                <td>$4.00</td>
+              </tr>
+              <tr>
+                <td>Es Jeruk</td>
+                <td>$3.00</td>
+              </tr>
+              <tr>
+                <td>Es Cendol</td>
+                <td>$4.50</td>
+              </tr>
+              <tr>
+                <td>Air Mineral</td>
+                <td>$1.50</td>
+              </tr>
+              <tr>
+                <td>Teh Tarik</td>
+                <td>$3.50</td>
+              </tr>
+              <tr>
+                <td>Es Kelapa Muda</td>
+                <td>$5.00</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <section class="order-guide" aria-labelledby="order-guide-title">
+            <h2 id="order-guide-title">Langkah-langkah Memesan</h2>
+            <ol>
+              <li>Pilih makanan dan minuman yang Anda inginkan dari menu.</li>
+              <li>Catat nama menu beserta jumlah pesanannya.</li>
+              <li>Hubungi kami melalui telepon atau datang langsung ke restoran.</li>
+              <li>Sampaikan pesanan dan alamat pengantaran kepada petugas.</li>
+              <li>Lakukan pembayaran, lalu tunggu pesanan Anda disiapkan.</li>
+            </ol>
+          </section>
+
+          <div class="info-alamat">
+            <strong>Lokasi Kami:</strong><br />
+            <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Melati+No.+123,+Jakarta+Selatan"
+              target="_blank" rel="noopener noreferrer">
+              Jl. Melati No. 12, Jakarta Selatan
+            </a><br />
+            Telepon: <a href="tel:+62211234567">(021) 123-4567</a><br />
+            Email: <a href="mailto:info@citaindonesia.com">info@citaindonesia.com</a>
           </div>
-        </section>
 
-        <section class="menu-group" aria-labelledby="drink-menu-title">
-          <h3 id="drink-menu-title">Minuman</h3>
-          <div class="table-scroll">
-            <table class="menu-table">
-              <caption>Daftar menu minuman dan harga</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Nama Minuman</th>
-                  <th scope="col">Harga</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Es Teh Manis</td>
-                  <td>$2.00</td>
-                </tr>
-                <tr>
-                  <td>Jus Alpukat</td>
-                  <td>$4.50</td>
-                </tr>
-                <tr>
-                  <td>Machalate</td>
-                  <td>$5.50</td>
-                </tr>
-                <tr>
-                  <td>Kopi Susu</td>
-                  <td>$4.00</td>
-                </tr>
-                <tr>
-                  <td>Es Jeruk</td>
-                  <td>$3.00</td>
-                </tr>
-                <tr>
-                  <td>Es Cendol</td>
-                  <td>$4.50</td>
-                </tr>
-                <tr>
-                  <td>Air Mineral</td>
-                  <td>$1.50</td>
-                </tr>
-                <tr>
-                  <td>Teh Tarik</td>
-                  <td>$3.50</td>
-                </tr>
-                <tr>
-                  <td>Es Kelapa Muda</td>
-                  <td>$5.00</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <section class="order-section" id="langkah-pemesanan" aria-labelledby="order-title">
-      <div class="landing-section">
-        <div class="section-heading">
-          <p class="section-kicker">Mudah dan praktis</p>
-          <h2 id="order-title">Langkah Pemesanan</h2>
-          <p>Hidangan favoritmu siap dinikmati dalam beberapa langkah.</p>
+          <div class="copyright">&copy; 2026 Sederhana Rasa</div>
         </div>
-        <ol class="order-steps">
-          <li>
-            <span class="step-number">01</span>
-            <div>
-              <h3>Pilih menu</h3>
-              <p>Tentukan makanan dan minuman favoritmu.</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-number">02</span>
-            <div>
-              <h3>Hubungi kami</h3>
-              <p>Telepon atau datang langsung ke restoran.</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-number">03</span>
-            <div>
-              <h3>Konfirmasi pesanan</h3>
-              <p>Sampaikan menu, jumlah, dan alamat pengantaran.</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-number">04</span>
-            <div>
-              <h3>Lakukan pembayaran</h3>
-              <p>Petugas kami akan membantu proses pembayaran.</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-number">05</span>
-            <div>
-              <h3>Nikmati hidangan</h3>
-              <p>Pesanan disiapkan segar untukmu.</p>
-            </div>
-          </li>
-        </ol>
       </div>
-    </section>
-  </main>
-
-  <footer class="landing-footer" id="kontak">
-    <div class="footer-content">
-      <div>
-        <a class="footer-brand" href="home.html">Cita Rasa Indonesia</a>
-        <p>Hangatnya masakan Nusantara, dekat dengan rumah.</p>
-      </div>
-      <address>
-        <h2>Kontak</h2>
-        <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Melati+No.+12,+Jakarta+Selatan" target="_blank"
-          rel="noopener noreferrer">Jl. Melati No. 12, Jakarta Selatan</a>
-        <a href="tel:+62211234567">(021) 123-4567</a>
-        <a href="mailto:info@citaindonesia.com">info@citaindonesia.com</a>
-      </address>
-      <p class="footer-copyright">&copy; 2026 Sederhana Rasa</p>
     </div>
-  </footer>
+  </div>
 </body>
 
 </html>
