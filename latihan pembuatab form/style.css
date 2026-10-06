@@ -1,0 +1,64 @@
+/* Import Modern Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Global Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #2d3748;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Form Container */
+form {
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 1px 8px rgba(0, 0, 0, 0.04);
+  max-width: 650px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout Tabel */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 14px; /* Memberikan jarak antar baris */
+}
+
+td {
+  vertical-align: top; /* Penyelarasan sejajar atas untuk textarea */
+  padding-top: 4px;
+}
+
+/* Kolom Label */
+td:nth-child(1) {
+  font-weight: 500;
+  color: #4a5568;
+  width: 140px;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+/* Kolom Titik Dua */
+td:nth-child(2) {
+  width: 15px;
+  color:

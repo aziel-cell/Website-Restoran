@@ -147,11 +147,90 @@
             <h2 id="order-guide-title">Langkah-langkah Memesan</h2>
             <ol>
               <li>Pilih makanan dan minuman yang Anda inginkan dari menu.</li>
-              <li>Catat nama menu beserta jumlah pesanannya.</li>
-              <li>Hubungi kami melalui telepon atau datang langsung ke restoran.</li>
-              <li>Sampaikan pesanan dan alamat pengantaran kepada petugas.</li>
-              <li>Lakukan pembayaran, lalu tunggu pesanan Anda disiapkan.</li>
+              <li>Isi formulir pemesanan di bawah ini dengan lengkap.</li>
+              <li>Pilih metode pembayaran yang sesuai.</li>
+              <li>Klik tombol Submit untuk mengirimkan data pesanan Anda.</li>
             </ol>
+          </section>
+
+          <!-- Form Pemesanan -->
+          <section class="order-form-section">
+            <h2>Form Pemesanan</h2>
+            <form action="#" method="POST" class="order-form">
+              <!-- 1. Textbox Input Nama Lengkap & No HP -->
+              <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required />
+              </div>
+
+              <div class="form-group">
+                <label for="nohp">No HP:</label>
+                <input type="tel" id="nohp" name="nohp" placeholder="Masukkan nomor HP" required />
+              </div>
+
+              <!-- 2. Input Type Date Tanggal Booking -->
+              <div class="form-group">
+                <label for="tanggal_booking">Tanggal Booking:</label>
+                <input type="date" id="tanggal_booking" name="tanggal_booking" required />
+              </div>
+
+              <!-- 3. Checkbox Pilihan Paket + Textbox Jumlah Pesanan -->
+              <div class="form-group">
+                <label>Pilihan Paket Menu & Jumlah Pesanan:</label>
+
+                <div class="checkbox-row">
+                  <input type="checkbox" id="makanan" name="kategori_menu[]" value="makanan" />
+                  <label for="makanan">Makanan</label>
+                  <input type="number" name="jumlah_makanan" min="1" placeholder="Jumlah" />
+                </div>
+
+                <div class="checkbox-row">
+                  <input type="checkbox" id="minuman" name="kategori_menu[]" value="minuman" />
+                  <label for="minuman">Minuman</label>
+                  <input type="number" name="jumlah_minuman" min="1" placeholder="Jumlah" />
+                </div>
+
+                <div class="checkbox-row">
+                  <input type="checkbox" id="dessert" name="kategori_menu[]" value="dessert" />
+                  <label for="dessert">Dessert</label>
+                  <input type="number" name="jumlah_dessert" min="1" placeholder="Jumlah" />
+                </div>
+              </div>
+
+              <!-- 4. Radio Button Pilihan Pembayaran & Input Terkait -->
+              <div class="form-group">
+                <label>Pilihan Pembayaran:</label>
+
+                <!-- Kartu Debit/Kredit -->
+                <div class="radio-row">
+                  <input type="radio" id="kartu" name="pembayaran" value="kartu" required />
+                  <label for="kartu">Kartu Debit/Kredit (Visa/Mastercard)</label>
+                </div>
+                <div class="sub-input">
+                  <input type="text" name="nomor_kartu" placeholder="Masukkan nomor kartu" />
+                </div>
+
+                <!-- Dompet Digital -->
+                <div class="radio-row">
+                  <input type="radio" id="dompet_digital" name="pembayaran" value="dompet_digital" />
+                  <label for="dompet_digital">Dompet Digital (Logo Dompet Digital)</label>
+                </div>
+                <div class="sub-input">
+                  <select name="pilihan_dompet_digital">
+                    <option value="">-- Pilih Dompet Digital --</option>
+                    <option value="gopay">GoPay</option>
+                    <option value="ovo">OVO</option>
+                    <option value="dana">DANA</option>
+                    <option value="shopeepay">ShopeePay</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- 5. Button Submit -->
+              <div class="form-group">
+                <button type="submit" class="btn-submit">Kirim / Submit</button>
+              </div>
+            </form>
           </section>
 
           <div class="info-alamat">

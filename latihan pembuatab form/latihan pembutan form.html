@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembuatan Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- Start of Form -->
+  <form action="" method="POST">
+    <table>
+      <tr>
+        <td>Nama</td>
+        <td>:</td>
+        <td><input type="text" name="nama" id="nama"></td>
+      </tr>
+      <tr>
+        <td>Alamat</td>
+        <td>:</td>
+        <td><input type="text" name="alamat" id="alamat"></td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>:</td>
+        <td>
+          <input type="radio" name="jk" id="laki-laki" value="Laki-laki">
+          <label for="laki-laki">Laki-laki</label>
+          <input type="radio" name="jk" id="perempuan" value="Perempuan">
+          <label for="perempuan">Perempuan</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Hobi</td>
+        <td>:</td>
+        <td>
+          <input type="checkbox" name="hobi[]" id="membaca" value="Membaca">
+          <label for="membaca">Membaca</label>
+          <input type="checkbox" name="hobi[]" id="menulis" value="Menulis">
+          <label for="menulis">Menulis</label>
+          <input type="checkbox" name="hobi[]" id="olahraga" value="Olahraga">
+          <label for="olahraga">Olahraga</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Tempat Lahir</td>
+        <td>:</td>
+        <td><input type="text" name="tempat_lahir" id="tempat_lahir"></td>
+      </tr>
+      <tr>
+        <td>Agama</td>
+        <td>:</td>
+        <td>
+          <select name="agama" id="agama">
+            <option value="">-- Pilih Agama --</option>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Budha</option>
+            <option value="Khonghucu">Khonghucu</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Usia</td>
+        <td>:</td>
+        <td><input type="number" name="usia" id="usia"></td>
+      </tr>
+      <tr>
+        <td>Kampus</td>
+        <td>:</td>
+        <td><input type="text" name="kampus" id="kampus"></td>
+      </tr>
+      <tr>
+        <td>Jurusan</td>
+        <td>:</td>
+        <td>
+          <select name="jurusan" id="jurusan">
+            <option value="">-- Pilih Jurusan --</option>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Manajemen">Manajemen</option>
+            <option value="Akuntansi">Akuntansi</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Status Pernikahan</td>
+        <td>:</td>
+        <td>
+          <input type="radio" name="status_pernikahan" id="belum_kawin" value="Belum Kawin">
+          <label for="belum_kawin">Belum Kawin</label>
+          <input type="radio" name="status_pernikahan" id="sudah_kawin" value="Sudah Kawin">
+          <label for="sudah_kawin">Sudah Kawin</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Keterangan</td>
+        <td>:</td>
+        <td><textarea name="keterangan" id="keterangan" cols="30" rows="5"></textarea></td>
+      </tr>
+      <tr>
+        <td>Pesan</td>
+        <td>:</td>
+        <td><textarea name="pesan" id="pesan" cols="30" rows="5"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>
+          <button type="submit">Kirim</button>
+          <button type="reset">Batal</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+
+</html>
